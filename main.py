@@ -3,10 +3,7 @@ import streamlit as st
 import preprocessor,helper
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-
 st.sidebar.title("Whatsapp-Chat-Analyser")
-
 uploaded_file=st.sidebar.file_uploader("choose a file")
 if uploaded_file is not None:
     bytes_data=uploaded_file.getvalue()
